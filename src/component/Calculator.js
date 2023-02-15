@@ -28,10 +28,10 @@ const Calculator = () => {
       </div>
 
       <div className="operations subgrid">
-        {OPERATIONS.map((operation, index) => (
+        {OPERATIONS.map((operation) => (
           <CalculatorOperation
             operation={operation}
-            key={index}
+            key={operation}
             onClick={() => enterOperator(operation)}
           />
         ))}
